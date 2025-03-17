@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lavender"
+    tools:context=".AddActivity">
+
+<!--    Place -->
+    <TextView
+        android:id="@+id/lblPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:text="Place"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        />
+
+    <EditText
+        android:id="@+id/edtTxtPlace"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/lblPlace"
+        android:layout_marginLeft="50dp"
+        android:inputType="text"
+        android:hint=""
+        android:textAlignment="center"
+        android:textSize="25dp"
+        />
+
+<!--    password -->
+    <TextView
+        android:id="@+id/lblPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblPlace"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"
+        android:text="Password"
+        android:textSize="35dp"/>
+
+    <EditText
+        android:id="@+id/editTxtPassword"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/lblPassword"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/edtTxtPlace"
+        android:inputType="text"
+        android:hint=""
+        android:textAlignment="center"
+        android:textSize="25dp"
+        />
+
+<!--    Add button -->
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTxtPassword"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:text="ADD"
+        android:textSize="30dp"
+        android:backgroundTint="@color/maroon"
+        android:onClick="add"/>
+
+<!--    Back Button -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAdd"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="BACK"
+        android:textSize="30dp"
+        android:backgroundTint="@color/maroon"
+        android:onClick="back"/>
+
+
+</RelativeLayout>
