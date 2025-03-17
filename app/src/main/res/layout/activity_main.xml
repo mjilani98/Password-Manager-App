@@ -15,7 +15,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/slategray"
+            android:background="@color/gray"
             app:title="Password Manager"
             app:titleTextColor="@color/white" />
     </com.google.android.material.appbar.AppBarLayout>
