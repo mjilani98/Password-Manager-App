@@ -65,6 +65,11 @@ public class MainActivity extends AppCompatActivity {
             Intent deleteActivity = new Intent(this,DeleteActivity.class);
             startActivity(deleteActivity);
         }
+        else if(id == R.id.Update)
+        {
+            Intent updateActivity = new Intent(this,UpdateActivity.class);
+            startActivity(updateActivity);
+        }
 
         return super.onOptionsItemSelected(item);
     }
