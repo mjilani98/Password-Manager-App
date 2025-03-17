@@ -53,11 +53,17 @@ public class MainActivity extends AppCompatActivity {
         //get the id of item selected from the menu
         int id = item.getItemId();
 
-
-        if (id == R.id.Add)
+        if (id == R.id.Add) // id add is selected from menu
         {
+            //start add activity
             Intent addActivity = new Intent(this,AddActivity.class);
             startActivity(addActivity);
+        }
+        else if (id == R.id.Delete) //if delete is selected from menu
+        {
+            //start delete activity
+            Intent deleteActivity = new Intent(this,DeleteActivity.class);
+            startActivity(deleteActivity);
         }
 
         return super.onOptionsItemSelected(item);
