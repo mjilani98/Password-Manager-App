@@ -1,5 +1,6 @@
 package com.example.hw3qestion6;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -55,7 +56,8 @@ public class MainActivity extends AppCompatActivity {
 
         if (id == R.id.Add)
         {
-            return true;
+            Intent addActivity = new Intent(this,AddActivity.class);
+            startActivity(addActivity);
         }
 
         return super.onOptionsItemSelected(item);
