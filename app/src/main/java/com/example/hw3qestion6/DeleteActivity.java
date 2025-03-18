@@ -28,6 +28,9 @@ public class DeleteActivity extends AppCompatActivity
 
     public void updateView()
     {
+
+        int DP = (int) (getResources().getDisplayMetrics().density);
+
         //get a list of password from the database
         LinkedList<Password> list = dataBaseManager.all();
 
@@ -40,6 +43,7 @@ public class DeleteActivity extends AppCompatActivity
             ScrollView.LayoutParams params = new ScrollView.LayoutParams(0, 0);
             params.width = ScrollView.LayoutParams.WRAP_CONTENT;
             params.height = ScrollView.LayoutParams.WRAP_CONTENT;
+            params.topMargin = 500 * DP;
             group.setLayoutParams(params);
 
             RadioButton[] buttons = new RadioButton[list.size()];
